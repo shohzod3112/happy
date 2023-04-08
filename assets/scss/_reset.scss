@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.container{
+    width: 80%;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media (max-width: 800px){
+        width: 85%;
+    }
+    @media (max-width: 600px){
+        width: 90%;
+    }
+}
+
+
+
+
+@mixin tugma(){
+    background-color: $maincolor;
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    color: white;
+    border-radius: 0.3rem;
+    text-transform: uppercase;
+    @media (max-width: 700px){
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    @media (max-width: 400px){
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+    }
+}
